@@ -4,9 +4,10 @@ var wins=0;
 var losses=0;
 var lives=10;
 var userInput=[];
-//letterArray = document.getElementById("letterArray");
-//computerChoice = document.getElementById("computerChoice");
-//win = document.getElementById("wins");
+var guessedSpan=document.getElementById("guessed-letters");
+var winsSpan = document.getElementById("wins");
+var lossesSpan = document.getElementById("losses");
+var livesSpan = document.getElementById("lives");
 
 function startup(){
     wins=0
@@ -23,7 +24,7 @@ document.onkeydown = function(event) {
            lives = 10;
            userInput = [];
        }
-
+       
        if (userGuess != computerChoice) {
            lives --;
            userInput.push(userGuess);
@@ -35,6 +36,9 @@ document.onkeydown = function(event) {
        losses ++;
        userInput = [];
        } 
-   document.querySelector("#container").innerHTML;
+   guessedSpan.innerHTML=event.key;
+   winsSpan.textContent=wins;
+   lossesSpan.textContent=losses;
+   livesSpan.textContent=lives;
 }
 }
