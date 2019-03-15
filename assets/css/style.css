@@ -9,8 +9,12 @@ h1{
     font-size:40px;
     color:darkblue;
 }
-.headingbox{
-  background: gray;
+hr{
+  height:10px;
+  background:lavender;
+  position:fixed;
+  left:100px;
+  right:100px;
 }
 .container {
     color: #f1f1f1;
