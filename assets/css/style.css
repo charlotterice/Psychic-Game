@@ -1,12 +1,28 @@
   body{
-      background:black;
+      background-image: url("../images/backgroundphoto.jpg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-attachment: fixed;
 }
 h1{
     text-align:center;
     font-size:40px;
+    color:darkblue;
+}
+.headingbox{
+  background: gray;
 }
 .container {
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
+  }
+  #game-elements {
+    background:darkblue;
+    border:solid white 10px;
+    padding:10px;
+    position: absolute;
+    top:220px;
+    left:100px;
+    right:100px;
   }
